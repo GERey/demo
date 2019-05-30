@@ -13,3 +13,11 @@ jobs:
     steps:
       - checkout
       - run: echo "test"
+      
+      
+ workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+      - test
