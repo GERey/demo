@@ -13,7 +13,7 @@ jobs:
     working_directory: ~/demo
     steps:
       - checkout
-      - run: echo "test"
+      - run: echo "test-hi"
       
       
 workflows:
