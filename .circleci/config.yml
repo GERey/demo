@@ -8,8 +8,9 @@ jobs:
       - run: echo "hello"
       
   test:
-    docker:
-      - image: circleci/ruby:2.4.1
+    macos:
+      xcode: "9.0"
+    working_directory: ~/demo
     steps:
       - checkout
       - run: echo "test"
